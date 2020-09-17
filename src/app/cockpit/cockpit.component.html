@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-12">
+    <h5 class="mt-4 " style="color: darkblue"> Add new Servers or blueprints! </h5>
+    <div class="form-group pt-3">
+      <label for="server-name">Server Name:</label>
+      <input type="text" id="server-name"
+             placeholder="plz enter a name ..."
+             class="form-control"
+             [(ngModel)]="serverName"
+      >
+    </div>
+    <div class="form-group">
+      <label for="server-content">Server Content:</label>
+      <input type="text"
+             class="form-control"
+             id="server-content"
+             placeholder="plz type some content..."
+             [(ngModel)]="serverContent"
+      >
+    </div>
+    <button type="button" class="btn btn-primary mr-2" (click)="createServer()">Add Server</button>
+    <button type="button" class="btn btn-primary" (click)="createServerBluePrint()">Add Server Blueprint</button>
+  </div>
+</div>

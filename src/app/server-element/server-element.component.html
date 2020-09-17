@@ -1,0 +1,10 @@
+<div class="card mt-2">
+  <div class="card-header bg-info" *ngIf="element.type === 'server'">{{element.name}}</div>
+  <div class="card-header bg-success" *ngIf="element.type === 'bluePrint'">{{element.name}}</div>
+  <div class="card-body">
+    <p>
+      <strong style="color: darkred" *ngIf="element.type === 'server'">{{element.content}}</strong>
+      <em style="color: blueviolet" *ngIf="element.type === 'bluePrint'">{{element.content}}</em>
+    </p>
+  </div>
+</div>
